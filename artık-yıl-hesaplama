@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Scratch{
+    public static void main(String[] args){
+        int artikyil;
+
+        Scanner inp=new Scanner(System.in);
+        System.out.print("yil giriniz: ");
+        artikyil =inp.nextInt();
+
+        if(artikyil%4==0 ){
+            System.out.print("bu bir artik yildir ");
+        }
+        else{
+            System.out.print("bu bir artik yil degildir ");
+        }
+    }
+}
