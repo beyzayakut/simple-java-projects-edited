@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Scratch {
+  
+  public static void main(String[] args) {
+
+        //vucut kitle indeksi hesaplama
+        double a,kg,m,sonuc;
+
+        Scanner beyza=new Scanner(System.in);
+        System.out.print("lutfen boyunuzu ( metre cinsinden) giriniz: ");
+        m=beyza.nextDouble();
+        System.out.print("lutfen kilonuzu giriniz: ");
+        kg=beyza.nextDouble();
+
+        a=m*m;
+        sonuc = kg/a;
+
+        System.out.print("vucut kitle indeksiniz: " + sonuc);
+    }
+}
