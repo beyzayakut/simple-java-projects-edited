@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class Scratch{
+    public static void main(String[] args){
+        int heat;
+
+        Scanner input=new Scanner(System.in);
+        System.out.print("sıcaklık giriniz: ");
+        heat=input.nextInt();
+
+        if(heat < 5){
+            System.out.println("kayak yapabilirsiniz.");
+        }
+        else if (heat>=10 && heat<=15){
+            System.out.println("hem sinemaya hem piknige gidebilirsiniz.");
+        }
+        else if(heat <= 25){
+            if(heat <= 15){
+                System.out.println("sinemaya gidebilirisniz.");
+            }
+            if(heat >= 10){
+                System.out.println("piknige gidebilirisiniz.");
+            }
+        }
+
+
+        else {
+            System.out.println("yüzmeye gidebilirsiniz.");
+        }
+    }
+}
