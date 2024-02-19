@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Scratch {
+
+public static void main(String[] args) {
+
+        //dairenin alanını ve cevresini hesaplayan program
+        int r,a;
+        double pi=3.14, sonuc;
+
+        Scanner yakut=new Scanner(System.in);
+        System.out.print("dairenin yari capini giriniz: ");
+        r=yakut.nextInt();
+        System.out.print("dairenin merkez acısının olcusunu giriniz: ");
+        a=yakut.nextInt();
+        //double alan =pi*r*r;
+        //double cevre=2*pi*r;
+        sonuc=(pi*(r*r)*a)/360;
+
+        System.out.print("dairenin alanı: " + sonuc);
+        //System.out.println("Dairenin alanı: "+ alan);
+        //System.out.println("Dairenin cevresi: " + cevre);
+
+    }
+ }
+    
+    
