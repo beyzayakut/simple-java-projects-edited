@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+class Scratch{
+    public static void main(String[] args){
+        String userName,password,newPassword;
+        int option;
+        Scanner inp=new Scanner(System.in);
+
+        System.out.print("Kullanıcı Adınız: ");
+        userName=inp.nextLine();
+
+        System.out.print("Sifreniz: ");
+        password=inp.nextLine();
+
+
+        if (userName.equals("patika") && (password.equals("java123")))
+        {
+            System.out.println("giriş yapabilirsin! ");
+        }
+        else if (userName.equals("patika") && !(password.equals("java123"))) {
+            System.out.println("sifre yanlıs !\n Sifreyi sıfırlamak isterseniz 1e basin.\ncikis yapmak icin 2ye basin");
+            option = inp.nextInt();
+            inp.nextLine();
+            if (option == 2) {
+                System.out.println("cikis yapildi: ");
+            } else if (option == 1) {
+                System.out.println("yeni sifrenizi giriniz: ");
+                newPassword = inp.nextLine();
+                password = newPassword;
+                if (password.equals("java123")) {
+                    System.out.println("sifre olusturulamadı,lutfen eski sifrenizi girmeyiniz");
+                } else {
+                    System.out.println("yeni sifre basari ile olusturuldu");
+                }
+            }
+        }
+    }
+}
