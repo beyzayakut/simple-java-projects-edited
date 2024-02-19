@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class Scratch{
+    public static void main(String[] Args){
+        int mesafe,yas,yolculukTipi;
+        double toplam,biletFiyati;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("mesafe degerini gir: ");
+        mesafe=input.nextInt();
+
+        System.out.print("yas degerini gir: ");
+        yas=input.nextInt();
+
+        System.out.print("yolculuk tipini gir: ");
+        yolculukTipi=input.nextInt();
+        if (yolculukTipi == 1) {
+            System.out.println("yolculuk tipiniz= tek yon ");
+            //toplam=( toplam - (toplam*0.20));
+             if (yolculukTipi == 2) {
+                System.out.println("yolculuk tipiniz= gidis donus ");
+            }
+        }
+
+        toplam = mesafe * 0.10;
+
+        if (yas<12){
+            toplam=toplam/2;
+            System.out.print("bilet fiyatiniz degeri: " + toplam);
+
+        }
+        if(yas>=12 && yas<=24) {
+            toplam=(toplam-(toplam*0.10));
+            System.out.print("bilet fiyatiniz degeri: " + toplam);
+
+        }
+        if(yas>65) {
+            toplam=(toplam-(toplam*0.30));
+            System.out.print("bilet fiyatiniz degeri: " + toplam);
+
+        }
+
+        //System.out.print("bilet fiyatiniz degerini gir: " + biletFiyati);
+        biletFiyati=input.nextInt();
+        System.out.print("bilet fiyatiniz degerini gir: " + biletFiyati);
+    }
+}
